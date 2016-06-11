@@ -1,16 +1,48 @@
-s := phrase & [ HEAD verb, SPR <>, COMPS <> ].
+s := phrase & 
+[ HEAD verb, 
+  VAL [
+    SPR <>, 
+    COMPS <>,
+    MOD <> 
+  ]
+].
 
-vp := phrase & [ HEAD verb, SPR < [] >, COMPS <> ].
+vp := phrase & 
+[ HEAD verb, 
+  VAL [ 
+    SPR < [] >, 
+    COMPS <>,
+    MOD <>
+  ] 
+].
 
 v := [ HEAD verb ].
 
-np := phrase & [ HEAD noun, SPR <>, COMPS <> ].
+np := phrase & 
+[ HEAD noun, 
+  VAL [
+    SPR <>, 
+    COMPS <>,
+    MOD <>
+  ] 
+].
 
-n := [ HEAD noun, SPR < [] > ].
+n := [ HEAD noun, 
+       VAL [
+         SPR < [] > 
+       ]
+     ].
 
 det := [ HEAD det ].
 
-pp := phrase & [ HEAD prep, SPR <>, COMPS <> ].
+pp := phrase & 
+[ HEAD prep, 
+  VAL [
+    SPR <>, 
+    COMPS <>,
+    MOD <>
+  ]
+].
 
 p := [ HEAD prep ].
 
