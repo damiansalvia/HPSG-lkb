@@ -1,0 +1,262 @@
+; Son 37 palabras
+
+el := word &
+[ ORTH "el",
+  HEAD det & [ 
+    AGR [
+      NUM sg,
+      GEN ma
+    ]
+  ]
+].
+
+los := word &
+[ ORTH "los", 
+  HEAD det & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ]
+].
+
+la := word &
+[ ORTH "la",  
+  HEAD det & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+las := word &
+[ ORTH "las", 
+  HEAD det & [
+    AGR [
+      NUM pl,
+      GEN fe
+    ]
+  ]
+].
+
+docente := word &
+[ ORTH "docente", 
+  HEAD noun & [
+    AGR [
+      NUM sg
+    ]
+  ]
+].
+
+docentes := word &
+[ ORTH "docentes", 
+  HEAD noun & [
+    AGR [
+      NUM pl
+    ]
+  ]
+].
+
+computacion := word &
+[ ORTH "computación" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+entregara := word &
+[ ORTH "entregará" , 
+  HEAD verb & [
+    AGR [
+      NUM sg,
+      PER ter 
+    ]
+  ]
+].
+
+entregaran := word &
+[ ORTH "entregarán", 
+  HEAD verb & [
+    AGR [
+      NUM pl,
+      PER ter
+    ]
+  ]
+].
+
+entrega := word &
+[ ORTH "entrega" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+libros := word &
+[ ORTH "libros" , 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ]
+].
+
+a := word &
+[ ORTH "a" , 
+  HEAD prep
+].
+
+estudiantes := word &
+[ ORTH "estudiantes", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ]
+].
+
+proximamente := word &
+[ ORTH "próximamente", 
+  HEAD adv
+].
+
+programacion := word &
+[ ORTH "programación" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+facultad := word &
+[ ORTH "facultad", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+seis := word &
+[ ORTH "seis", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN fe ; TODO - No estoy seguro
+    ]
+  ]
+].
+
+tarde := word &
+[ ORTH "tarde", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+cancelaron := word &
+[ ORTH "cancelaron", 
+  HEAD verb & [
+    AGR [
+      NUM pl,
+      PER ter
+    ]
+  ]
+].
+
+de := word &
+[ ORTH "de", 
+  HEAD prep
+].
+
+programada := word &
+[ ORTH "programada", 
+  HEAD adv
+].
+
+postergaron := word & 
+[ ORTH "postergaron", 
+  HEAD verb & [
+    AGR [
+      NUM pl,
+      PER ter
+    ]
+  ]
+].
+
+para := word &
+[ ORTH "para", 
+  HEAD prep ; TODO - No estoy seguro
+].
+
+semana := word &
+[ ORTH "semana", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+proxima := word &
+[ ORTH "próxima", 
+  HEAD adj & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+volvieron := word &
+[ ORTH "volvieron", 
+  HEAD verb & [
+    AGR [
+      NUM pl,
+      PER ter
+    ]
+  ]
+].
+
+hasta := word &
+[ ORTH "hasta", 
+  HEAD adv
+].
+
+desde := word &
+[ ORTH "desde", 
+  HEAD adv
+].
+
+manifestacion := word &
+[ ORTH "manifestación", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ]
+].
+
+_punto := word &
+[ ORTH "." ].
+
+
+
+
+

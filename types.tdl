@@ -1,0 +1,72 @@
+expr := *top* & 
+[ HEAD pos,
+  VAL val-cat ].
+
+val-cat := *top* &
+[ SPR *list*,
+  COMPS *list*, 
+  MOD *list* ].
+
+phrase := expr &
+[ ARGS *list* ].
+
+word := expr &
+[ ORTH string ].
+
+pos := *top*.
+
+agr-pos := pos &
+[ AGR agr-cat ].
+prep := pos.
+adv := pos.
+conj := pos.
+
+verb := agr-pos &
+[ AGR agr-cat-p ].
+agr-pos-pg := agr-pos &
+[ AGR agr-cat-pg ].
+adj := agr-pos &
+[ AGR agr-cat-g ].
+
+det := agr-pos-pg.
+noun := agr-pos-pg.
+
+agr-cat := *top* &
+[ NUM num-cat ].
+
+agr-cat-p := agr-cat &
+[ PER per-cat ].
+agr-cat-g := agr-cat &
+[ GEN gen-cat ].
+
+agr-cat-pg := agr-cat-p & agr-cat-g.
+
+num-cat := *top*.
+
+sg := num-cat.
+pl := num-cat.
+
+per-cat := *top*.
+
+pri := per-cat.
+seg := per-cat.
+ter := per-cat.
+
+gen-cat := *top*.
+
+ma := gen-cat.
+fe := gen-cat.
+
+;;;;;;;;;;;;;;;;;;;;;;;
+
+string := *top*.
+
+*list* := *top*.
+
+*ne-list* := *list* &
+ [ FIRST *top*,
+   REST *list* ].
+
+*null* := *list*.
+
+
