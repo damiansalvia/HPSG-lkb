@@ -1,4 +1,4 @@
-; Son 37 palabras
+; Son 30 palabras y 1 no que no debe ser reconocida
 
 el := word &
 [ ORTH "el",
@@ -46,6 +46,15 @@ docente := word &
     AGR [
       NUM sg
     ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -55,6 +64,15 @@ docentes := word &
     AGR [
       NUM pl
     ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -85,26 +103,50 @@ entregaran := word &
       NUM pl,
       PER ter
     ]
+  ],
+  VAL [
+    COMPS < phrase & [
+      HEAD noun
+    ] >
   ]
 ].
 
 entrega := word &
 [ ORTH "entrega" , 
-  HEAD noun & [
+  HEAD noun & [ ; es Noun porque siempre precedido por "la". No es Verb
     AGR [
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg
+        ] 
+      ]
+    ] >
   ]
 ].
 
 libros := word &
-[ ORTH "libros" , 
+[ ORTH "libros", 
   HEAD noun & [
     AGR [
       NUM pl,
       GEN ma
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM pl,
+          GEN ma
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -117,9 +159,18 @@ estudiantes := word &
 [ ORTH "estudiantes", 
   HEAD noun & [
     AGR [
-      NUM pl,
-      GEN ma
+      NUM pl
+      ; GEN ma ; TODO - Podria ser femenino tambien "Las estudiantes" pero no esta en el corpus
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -145,6 +196,16 @@ facultad := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -155,6 +216,16 @@ seis := word &
       NUM pl,
       GEN fe ; TODO - No estoy seguro
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM pl,
+          GEN fe
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -165,6 +236,16 @@ tarde := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -210,6 +291,16 @@ semana := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >
   ]
 ].
 
@@ -250,11 +341,26 @@ manifestacion := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >
   ]
 ].
 
 _punto := word &
 [ ORTH "." ].
+
+programado := word & ; OBS - No deberia considerarse
+[ ORTH "programado", 
+  HEAD verb
+].
 
 
 
