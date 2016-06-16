@@ -1,0 +1,34 @@
+1 El docente de Computación entregará libros a los estudiantes. 0 66
+2 Los docentes de Computación entregarán próximamente libros a los estudiantes. 0 451
+3 Los docentes de Computación entregarán libros próximamente a los estudiantes. 0 501
+4 Los docentes de Computación entregarán libros de Programación a los estudiantes de la 0 451
+5 facultad. 0 3
+6 Los docentes de Computación entregarán a los estudiantes de Programación libros de la 0 286
+7 facultad. 0 3
+8 Los docentes de Computación entregarán libros de Programación a las seis de la tarde. 0 451
+9 Los docentes cancelaron la entrega de libros a los estudiantes. 0 439
+10 Los docentes cancelaron la entrega de libros de Programación a los estudiantes. 0 441
+11 Los docentes cancelaron la entrega de libros. 7 217
+12 Los docentes cancelaron la entrega de libros programada. 0 501
+13 Los docentes cancelaron la entrega programada de libros. 0 438
+14 Los docentes postergaron para la semana próxima la entrega de libros a los estudiantes. 0 450
+15 Los docentes postergaron la entrega de libros a los estudiantes. 0 439
+16 Los estudiantes volvieron de la manifestación a la facultad. 0 501
+17 Los estudiantes volvieron desde la manifestación a la facultad. 0 456
+18 Los estudiantes volvieron hasta la facultad desde la manifestación. 0 454
+19 Los estudiantes volvieron tarde. 1 21
+20 Los estudiantes volvieron de tarde. 2 31
+21 Los estudiantes volvieron a las seis de la tarde. 0 501
+22 Los estudiantes volvieron a la facultad para la entrega de libros. 0 476
+23 *Los docente de Computación entregarán próximamente libros a los estudiantes. 0 247
+24 *Los docentes de Computación entregarán a libros a los estudiantes. 0 170
+25 *Los docentes de Computación entregará libros a los estudiantes. 0 151
+26 *Los docentes cancelaron la entrega de libros programado. 0 501
+27 *Los docentes postergaron para la semana próxima. 0 501
+28 *Los estudiantes volvieron desde manifestación desde la facultad. 0 501
+
+;;; Total CPU time: 220 msecs
+
+;;; Mean edges: 344.57
+
+;;; Mean parses: 0.36

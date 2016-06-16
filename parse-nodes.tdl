@@ -2,8 +2,8 @@ s := phrase &
 [ HEAD verb, 
   VAL [
     SPR < >, 
-    COMPS < >,
-    MOD < > 
+    COMPS < >
+    ;MOD < > 
   ]
 ].
 
@@ -11,8 +11,8 @@ vp := phrase &
 [ HEAD verb, 
   VAL [ 
     SPR < [] >, 
-    COMPS < >,
-    MOD < >
+    COMPS < >
+    ;MOD < >
   ] 
 ].
 
@@ -22,8 +22,8 @@ np := phrase &
 [ HEAD noun, 
   VAL [
     SPR < >, 
-    COMPS < >,
-    MOD < >
+    COMPS < >
+    ;MOD < >
   ] 
 ].
 
@@ -39,8 +39,8 @@ pp := phrase &
 [ HEAD prep, 
   VAL [
     SPR < >, 
-    COMPS < >,
-    MOD < >
+    COMPS < >
+    ;MOD < >
   ]
 ].
 

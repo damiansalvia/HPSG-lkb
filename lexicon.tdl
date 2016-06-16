@@ -7,6 +7,10 @@ el := word &
       NUM sg,
       GEN ma
     ]
+  ],
+  VAL [
+    SPR <>,
+    COMPS <>
   ]
 ].
 
@@ -17,6 +21,10 @@ los := word &
       NUM pl,
       GEN ma
     ]
+  ],
+  VAL [
+    SPR <>,
+    COMPS <>
   ]
 ].
 
@@ -54,7 +62,27 @@ docente := word &
           NUM sg
         ] 
       ]
-    ] >
+    ] >,
+    COMPS < >
+  ]
+].
+
+docente-comp := word &
+[ ORTH "docente", 
+  HEAD noun & [
+    AGR [
+      NUM sg
+    ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg
+        ] 
+      ]
+    ] >,
+    COMPS < phrase & [ HEAD prep ] >
   ]
 ].
 
@@ -93,6 +121,34 @@ entregara := word &
       NUM sg,
       PER ter 
     ]
+  ],
+  VAL [
+    SPR < phrase & [ 
+      HEAD noun & [
+        AGR [
+          NUM sg,
+          PER ter 
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < phrase & [
+        HEAD noun,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ], phrase & [ 
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ] 
+      ]  
+    > 
   ]
 ].
 
@@ -105,9 +161,8 @@ entregaran := word &
     ]
   ],
   VAL [
-    COMPS < phrase & [
-      HEAD noun
-    ] >
+    SPR < phrase & [ HEAD noun ] >,
+    COMPS < phrase & [ HEAD noun ], phrase & [ HEAD prep ]  >
   ]
 ].
 
@@ -139,20 +194,23 @@ libros := word &
     ]
   ],
   VAL[
-    SPR < word & [
-      HEAD det & [
-        AGR [
-          NUM pl,
-          GEN ma
-        ] 
-      ]
-    ] >
+    SPR < >
   ]
 ].
 
 a := word &
 [ ORTH "a" , 
-  HEAD prep
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < phrase & [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >
+  ]
 ].
 
 estudiantes := word &
@@ -163,14 +221,19 @@ estudiantes := word &
       ; GEN ma ; TODO - Podria ser femenino tambien "Las estudiantes" pero no esta en el corpus
     ]
   ],
-  VAL[
+  VAL [
     SPR < word & [
       HEAD det & [
         AGR [
           NUM pl
-        ] 
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
       ]
-    ] >
+    ] >,
+    COMPS < >
   ]
 ].
 
@@ -249,6 +312,11 @@ tarde := word &
   ]
 ].
 
+tarde := word & [
+  ORTH "tarde",
+  HEAD adv
+].
+
 cancelaron := word &
 [ ORTH "cancelaron", 
   HEAD verb & [
@@ -261,7 +329,17 @@ cancelaron := word &
 
 de := word &
 [ ORTH "de", 
-  HEAD prep
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < phrase & [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >
+  ]
 ].
 
 programada := word &

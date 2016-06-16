@@ -4,8 +4,8 @@ expr := *top* &
 
 val-cat := *top* &
 [ SPR *list*,
-  COMPS *list*, 
-  MOD *list* ].
+  COMPS *list*
+ ].
 
 phrase := expr &
 [ ARGS *list* ].
