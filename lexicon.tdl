@@ -358,6 +358,7 @@ libros-comp := word &
   VAL[
     SPR < >,
     COMPS < [
+      ; ORTH "de",
       HEAD prep,
       VAL [
         SPR < >,
@@ -623,6 +624,16 @@ volvieron := word &
       NUM pl,
       PER ter
     ]
+  ],
+  VAL [
+    SPR < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < >
   ]
 ].
 
