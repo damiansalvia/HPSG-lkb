@@ -18,14 +18,13 @@ vp := phrase &
 
 v := [ HEAD verb ].
 
-np := phrase & 
-[ HEAD noun, 
-  VAL [
-    SPR < >, 
-    COMPS < >
-    ;MOD < >
-  ] 
-].
+np := [ HEAD noun, 
+        VAL [
+          SPR < >, 
+          COMPS < >
+          ;MOD < >
+        ] 
+      ].
 
 n := [ HEAD noun, 
        VAL [

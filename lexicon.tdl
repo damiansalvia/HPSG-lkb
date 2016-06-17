@@ -9,8 +9,8 @@ el := word &
     ]
   ],
   VAL [
-    SPR <>,
-    COMPS <>
+    SPR < >,
+    COMPS < >
   ]
 ].
 
@@ -35,6 +35,10 @@ la := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >
   ]
 ].
 
@@ -45,6 +49,10 @@ las := word &
       NUM pl,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >
   ]
 ].
 
@@ -56,7 +64,7 @@ docente := word &
     ]
   ],
   VAL [
-    SPR < word & [
+    SPR < [
       HEAD det & [
         AGR [
           NUM sg
@@ -75,14 +83,20 @@ docente-comp := word &
     ]
   ],
   VAL [
-    SPR < word & [
+    SPR < [
       HEAD det & [
         AGR [
           NUM sg
         ] 
       ]
     ] >,
-    COMPS < phrase & [ HEAD prep ] >
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >
   ]
 ].
 
@@ -94,11 +108,37 @@ docentes := word &
     ]
   ],
   VAL [
-    SPR < word & [
+    SPR < [
       HEAD det & [
         AGR [
           NUM pl
         ] 
+      ]
+    ] >,
+    COMPS < >
+  ]
+].
+
+docentes-comp := word &
+[ ORTH "docentes", 
+  HEAD noun & [
+    AGR [
+      NUM pl
+    ]
+  ],
+  VAL [
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ] 
+      ]
+    ] >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
       ]
     ] >
   ]
@@ -111,6 +151,10 @@ computacion := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >
   ]
 ].
 
@@ -123,7 +167,7 @@ entregara := word &
     ]
   ],
   VAL [
-    SPR < phrase & [ 
+    SPR < [ 
       HEAD noun & [
         AGR [
           NUM sg,
@@ -135,13 +179,13 @@ entregara := word &
         COMPS <>
       ]
     ] >,
-    COMPS < phrase & [
+    COMPS < [
         HEAD noun,
         VAL [
           SPR <>,
           COMPS <>
         ]
-      ], phrase & [ 
+      ], [ 
         HEAD prep,
         VAL [
           SPR <>,
@@ -157,16 +201,78 @@ entregaran := word &
   HEAD verb & [
     AGR [
       NUM pl,
-      PER ter
+      PER ter 
     ]
   ],
   VAL [
-    SPR < phrase & [ HEAD noun ] >,
-    COMPS < phrase & [ HEAD noun ], phrase & [ HEAD prep ]  >
+    SPR < [ 
+      HEAD noun & [
+        AGR [
+          NUM pl,
+          PER ter 
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < [
+        HEAD noun,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ], [ 
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ] 
+      ]  
+    > 
   ]
 ].
 
-entrega := word &
+entregaran-inverso := word &
+[ ORTH "entregarán", 
+  HEAD verb & [
+    AGR [
+      NUM pl,
+      PER ter 
+    ]
+  ],
+  VAL [
+    SPR < [ 
+      HEAD noun & [
+        AGR [
+          NUM pl,
+          PER ter 
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < [ 
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ] 
+      ], [
+        HEAD noun,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ] 
+    > 
+  ]
+].
+
+entrega-2-comp := word &
 [ ORTH "entrega" , 
   HEAD noun & [ ; es Noun porque siempre precedido por "la". No es Verb
     AGR [
@@ -175,11 +281,53 @@ entrega := word &
     ]
   ],
   VAL[
-    SPR < word & [
+    SPR < [
       HEAD det & [
         AGR [
-          NUM sg
+          NUM sg,
+          GEN fe
         ] 
+      ]
+    ] >,
+    COMPS < [
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ], [ 
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ] 
+      ]  
+    >
+  ]
+].
+
+entrega-1-comp := word &
+[ ORTH "entrega" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL[
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR <>,
+        COMPS <>
       ]
     ] >
   ]
@@ -194,7 +342,28 @@ libros := word &
     ]
   ],
   VAL[
-    SPR < >
+    SPR < >,
+    COMPS < >
+  ]
+].
+
+libros-comp := word &
+[ ORTH "libros", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ],
+  VAL[
+    SPR < >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >
   ]
 ].
 
@@ -203,7 +372,7 @@ a := word &
   HEAD prep,
   VAL [
     SPR < >,
-    COMPS < phrase & [
+    COMPS < [
       HEAD noun,
       VAL [
         SPR <>,
@@ -222,7 +391,7 @@ estudiantes := word &
     ]
   ],
   VAL [
-    SPR < word & [
+    SPR < [
       HEAD det & [
         AGR [
           NUM pl
@@ -234,6 +403,35 @@ estudiantes := word &
       ]
     ] >,
     COMPS < >
+  ]
+].
+
+estudiantes-comp := word &
+[ ORTH "estudiantes", 
+  HEAD noun & [
+    AGR [
+      NUM pl
+    ]
+  ],
+  VAL [
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >
   ]
 ].
 
@@ -249,6 +447,10 @@ programacion := word &
       NUM sg,
       GEN fe
     ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >
   ]
 ].
 
@@ -260,15 +462,16 @@ facultad := word &
       GEN fe
     ]
   ],
-  VAL[
-    SPR < word & [
+  VAL [
+    SPR < [
       HEAD det & [
         AGR [
           NUM sg,
           GEN fe
         ] 
       ]
-    ] >
+    ] >,
+    COMPS < >
   ]
 ].
 
@@ -324,6 +527,27 @@ cancelaron := word &
       NUM pl,
       PER ter
     ]
+  ],
+  VAL [
+    SPR < [
+      HEAD noun & [
+        AGR [
+          NUM pl,
+          PER ter
+        ] 
+      ],
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >
   ]
 ].
 
@@ -332,7 +556,7 @@ de := word &
   HEAD prep,
   VAL [
     SPR < >,
-    COMPS < phrase & [
+    COMPS < [
       HEAD noun,
       VAL [
         SPR <>,
