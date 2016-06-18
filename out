@@ -10,23 +10,23 @@
 10 Los docentes cancelaron la entrega de libros programada. 0 40
 11 Los docentes cancelaron la entrega programada de libros. 0 43
 12 Los docentes postergaron para la semana próxima la entrega de libros a los estudiantes. 0 484
-13 Los docentes postergaron la entrega de libros a los estudiantes. 5 93
-14 Los estudiantes volvieron de la manifestación a la facultad. 7 116
-15 Los estudiantes volvieron desde la manifestación a la facultad. 19 291
-16 Los estudiantes volvieron hasta la facultad desde la manifestación. 31 491
-17 Los estudiantes volvieron tarde. 1 25
-18 Los estudiantes volvieron de tarde. 2 37
-19 Los estudiantes volvieron a las seis de la tarde. 6 123
-20 Los estudiantes volvieron a la facultad para la entrega de libros. 10 264
+13 Los docentes postergaron la entrega de libros a los estudiantes. 2 52
+14 Los estudiantes volvieron de la manifestación a la facultad. 0 46
+15 Los estudiantes volvieron desde la manifestación a la facultad. 0 91
+16 Los estudiantes volvieron hasta la facultad desde la manifestación. 0 123
+17 Los estudiantes volvieron tarde. 0 17
+18 Los estudiantes volvieron de tarde. 0 19
+19 Los estudiantes volvieron a las seis de la tarde. 0 45
+20 Los estudiantes volvieron a la facultad para la entrega de libros. 0 66
 21 *Los docente de Computación entregarán próximamente libros a los estudiantes. 0 62
 22 *Los docentes de Computación entregarán a libros a los estudiantes. 0 43
 23 *Los docentes de Computación entregará libros a los estudiantes. 0 39
 24 *Los docentes cancelaron la entrega de libros programado. 1 40
-25 *Los docentes postergaron para la semana próxima. 13 203
-26 *Los estudiantes volvieron desde manifestación desde la facultad. 34 451
+25 *Los docentes postergaron para la semana próxima. 0 71
+26 *Los estudiantes volvieron desde manifestación desde la facultad. 0 125
 
-;;; Total CPU time: 100 msecs
+;;; Total CPU time: 80 msecs
 
-;;; Mean edges: 129.00
+;;; Mean edges: 73.65
 
-;;; Mean parses: 5.27
+;;; Mean parses: 0.42

@@ -579,7 +579,28 @@ postergaron := word &
       NUM pl,
       PER ter
     ]
-  ]
+  ],
+  VAL [
+    SPR < [
+      HEAD noun & [
+        AGR [
+          NUM pl,
+          PER ter
+        ] 
+      ],
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >
+  ]   
 ].
 
 para := word &
