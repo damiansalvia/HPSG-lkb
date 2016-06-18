@@ -1,5 +1,6 @@
 ; Son 30 palabras y 1 no que no debe ser reconocida
 
+;;;;;;; DETERMINANTES ;;;;;;;;;;
 el := word &
 [ ORTH "el",
   HEAD det & [ 
@@ -10,7 +11,8 @@ el := word &
   ],
   VAL [
     SPR < >,
-    COMPS < >
+    COMPS < >,
+    MOD < >
   ]
 ].
 
@@ -24,7 +26,8 @@ los := word &
   ],
   VAL [
     SPR <>,
-    COMPS <>
+    COMPS <>,
+    MOD < >
   ]
 ].
 
@@ -38,7 +41,8 @@ la := word &
   ],
   VAL [
     SPR < >,
-    COMPS < >
+    COMPS < >,
+    MOD < >
   ]
 ].
 
@@ -52,30 +56,14 @@ las := word &
   ],
   VAL [
     SPR < >,
-    COMPS < >
+    COMPS < >,
+    MOD < >
   ]
 ].
+
+;;;;;;;; NOMBRES ;;;;;;;;;;;
 
 docente := word &
-[ ORTH "docente", 
-  HEAD noun & [
-    AGR [
-      NUM sg
-    ]
-  ],
-  VAL [
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM sg
-        ] 
-      ]
-    ] >,
-    COMPS < >
-  ]
-].
-
-docente-comp := word &
 [ ORTH "docente", 
   HEAD noun & [
     AGR [
@@ -96,7 +84,8 @@ docente-comp := word &
         SPR < >,
         COMPS < >
       ]
-    ] >
+    ] >,
+    MOD < >
   ]
 ].
 
@@ -115,11 +104,12 @@ docentes := word &
         ] 
       ]
     ] >,
-    COMPS < >
+    COMPS < >,
+    MOD < >
   ]
 ].
 
-docentes-comp := word &
+docentes-computacion := word &
 [ ORTH "docentes", 
   HEAD noun & [
     AGR [
@@ -140,7 +130,8 @@ docentes-comp := word &
         SPR < >,
         COMPS < >
       ]
-    ] >
+    ] >,
+    MOD < >
   ]
 ].
 
@@ -154,9 +145,337 @@ computacion := word &
   ],
   VAL [
     SPR < >,
-    COMPS < >
+    COMPS < >,
+    MOD < >
   ]
 ].
+
+entrega-pp := word &
+[ ORTH "entrega" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL[
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < [
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ] >,
+    MOD < [
+      HEAD adj & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ]
+      ]
+    ] >
+  ]
+].
+
+entrega-pp-pp := word &
+[ ORTH "entrega" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL[
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < [
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ], [ 
+        HEAD prep,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ] 
+      ]  
+    >,
+    MOD < [
+      HEAD adj & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ]
+      ]
+    ] >
+  ]
+].
+
+libros := word &
+[ ORTH "libros", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ],
+  VAL[
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+libros-computacion := word &
+[ ORTH "libros", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN ma
+    ]
+  ],
+  VAL[
+    SPR < >,
+    COMPS < [
+      ;ORTH "de",
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >,
+    MOD < >
+  ]
+].
+
+estudiantes := word &
+[ ORTH "estudiantes", 
+  HEAD noun & [
+    AGR [
+      NUM pl
+    ]
+  ],
+  VAL [
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+estudiantes-facultad := word &
+[ ORTH "estudiantes", 
+  HEAD noun & [
+    AGR [
+      NUM pl
+    ]
+  ],
+  VAL [
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM pl
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >,
+    MOD < >
+  ]
+].
+
+programacion := word &
+[ ORTH "programación" , 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+facultad := word &
+[ ORTH "facultad", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL [
+    SPR < [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+seis := word &
+[ ORTH "seis", 
+  HEAD noun & [
+    AGR [
+      NUM pl,
+      GEN fe ; TODO - No estoy seguro
+    ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM pl,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+      ]
+    ] >,
+    MOD < >
+  ]
+].
+
+tarde-noun := word &
+[ ORTH "tarde", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL[
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+tarde-noun-nospr := word &
+[ ORTH "tarde", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL[
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+semana := word &
+[ ORTH "semana", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < [
+      HEAD adj & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ]
+      ],
+      VAL [
+        SPR < >,
+        COMPS < >
+      ] 
+    ] >,
+    MOD < >
+  ]
+].
+
+manifestacion := word &
+[ ORTH "manifestación", 
+  HEAD noun & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL [
+    SPR < word & [
+      HEAD det & [
+        AGR [
+          NUM sg,
+          GEN fe
+        ] 
+      ]
+    ] >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+;;;;;;;;;;;;;; VERBOS ;;;;;;;;;;;;;;
 
 entregara := word &
 [ ORTH "entregará" , 
@@ -192,11 +511,12 @@ entregara := word &
           COMPS <>
         ] 
       ]  
-    > 
+    >,
+    MOD < > 
   ]
 ].
 
-entregaran := word &
+entregaran-np-pp := word &
 [ ORTH "entregarán", 
   HEAD verb & [
     AGR [
@@ -230,295 +550,53 @@ entregaran := word &
           COMPS <>
         ] 
       ]  
-    > 
-  ]
-].
-
-entregaran-inverso := word &
-[ ORTH "entregarán", 
-  HEAD verb & [
-    AGR [
-      NUM pl,
-      PER ter 
-    ]
-  ],
-  VAL [
-    SPR < [ 
-      HEAD noun & [
-        AGR [
-          NUM pl,
-          PER ter 
-        ]
-      ],
+    >,
+    MOD < [
+      HEAD adv,
       VAL [
         SPR <>,
         COMPS <>
-      ]
-    ] >,
-    COMPS < [ 
-        HEAD prep,
-        VAL [
-          SPR <>,
-          COMPS <>
-        ] 
-      ], [
-        HEAD noun,
-        VAL [
-          SPR <>,
-          COMPS <>
-        ]
       ] 
-    > 
-  ]
-].
-
-entrega-2-comp := word &
-[ ORTH "entrega" , 
-  HEAD noun & [ ; es Noun porque siempre precedido por "la". No es Verb
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL[
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
-      ]
-    ] >,
-    COMPS < [
-        HEAD prep,
-        VAL [
-          SPR <>,
-          COMPS <>
-        ]
-      ], [ 
-        HEAD prep,
-        VAL [
-          SPR <>,
-          COMPS <>
-        ] 
-      ]  
-    >
-  ]
-].
-
-entrega-1-comp := word &
-[ ORTH "entrega" , 
-  HEAD noun & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL[
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
-      ]
-    ] >,
-    COMPS < [
-      HEAD prep,
-      VAL [
-        SPR <>,
-        COMPS <>
-      ]
     ] >
   ]
 ].
 
-libros := word &
-[ ORTH "libros", 
-  HEAD noun & [
+entregaran-np := word &
+[ ORTH "entregarán", 
+  HEAD verb & [
     AGR [
       NUM pl,
-      GEN ma
-    ]
-  ],
-  VAL[
-    SPR < >,
-    COMPS < >
-  ]
-].
-
-libros-comp := word &
-[ ORTH "libros", 
-  HEAD noun & [
-    AGR [
-      NUM pl,
-      GEN ma
-    ]
-  ],
-  VAL[
-    SPR < >,
-    COMPS < [
-      ; ORTH "de",
-      HEAD prep,
-      VAL [
-        SPR < >,
-        COMPS < >
-      ]
-    ] >
-  ]
-].
-
-a := word &
-[ ORTH "a" , 
-  HEAD prep,
-  VAL [
-    SPR < >,
-    COMPS < [
-      HEAD noun,
-      VAL [
-        SPR <>,
-        COMPS <>
-      ]
-    ] >
-  ]
-].
-
-estudiantes := word &
-[ ORTH "estudiantes", 
-  HEAD noun & [
-    AGR [
-      NUM pl
-      ; GEN ma ; TODO - Podria ser femenino tambien "Las estudiantes" pero no esta en el corpus
+      PER ter 
     ]
   ],
   VAL [
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM pl
-        ]
-      ],
-      VAL [
-        SPR <>,
-        COMPS <>
-      ]
-    ] >,
-    COMPS < >
-  ]
-].
-
-estudiantes-comp := word &
-[ ORTH "estudiantes", 
-  HEAD noun & [
-    AGR [
-      NUM pl
-    ]
-  ],
-  VAL [
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM pl
-        ]
-      ],
-      VAL [
-        SPR <>,
-        COMPS <>
-      ]
-    ] >,
-    COMPS < [
-      HEAD prep,
-      VAL [
-        SPR < >,
-        COMPS < >
-      ]
-    ] >
-  ]
-].
-
-proximamente := word &
-[ ORTH "próximamente", 
-  HEAD adv
-].
-
-programacion := word &
-[ ORTH "programación" , 
-  HEAD noun & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL [
-    SPR < >,
-    COMPS < >
-  ]
-].
-
-facultad := word &
-[ ORTH "facultad", 
-  HEAD noun & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL [
-    SPR < [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
-      ]
-    ] >,
-    COMPS < >
-  ]
-].
-
-seis := word &
-[ ORTH "seis", 
-  HEAD noun & [
-    AGR [
-      NUM pl,
-      GEN fe ; TODO - No estoy seguro
-    ]
-  ],
-  VAL[
-    SPR < word & [
-      HEAD det & [
+    SPR < [ 
+      HEAD noun & [
         AGR [
           NUM pl,
-          GEN fe
-        ] 
+          PER ter 
+        ]
+      ],
+      VAL [
+        SPR <>,
+        COMPS <>
       ]
+    ] >,
+    COMPS < [
+        HEAD noun,
+        VAL [
+          SPR <>,
+          COMPS <>
+        ]
+      ] >,
+    MOD < [
+      HEAD prep,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ] 
     ] >
   ]
-].
-
-tarde := word &
-[ ORTH "tarde", 
-  HEAD noun & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL[
-    SPR < word & [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
-      ]
-    ] >
-  ]
-].
-
-tarde := word & [
-  ORTH "tarde",
-  HEAD adv
 ].
 
 cancelaron := word &
@@ -548,28 +626,9 @@ cancelaron := word &
         SPR < >,
         COMPS < >
       ]
-    ] >
+    ] >,
+    MOD < >
   ]
-].
-
-de := word &
-[ ORTH "de", 
-  HEAD prep,
-  VAL [
-    SPR < >,
-    COMPS < [
-      HEAD noun,
-      VAL [
-        SPR <>,
-        COMPS <>
-      ]
-    ] >
-  ]
-].
-
-programada := word &
-[ ORTH "programada", 
-  HEAD adv
 ].
 
 postergaron := word & 
@@ -599,43 +658,15 @@ postergaron := word &
         SPR < >,
         COMPS < >
       ]
-    ] >
-  ]   
-].
-
-para := word &
-[ ORTH "para", 
-  HEAD prep ; TODO - No estoy seguro
-].
-
-semana := word &
-[ ORTH "semana", 
-  HEAD noun & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ],
-  VAL [
-    SPR < word & [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
+    ] >,
+    MOD < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
       ]
     ] >
-  ]
-].
-
-proxima := word &
-[ ORTH "próxima", 
-  HEAD adj & [
-    AGR [
-      NUM sg,
-      GEN fe
-    ]
-  ]
+  ]   
 ].
 
 volvieron := word &
@@ -654,46 +685,181 @@ volvieron := word &
         COMPS <>
       ]
     ] >,
-    COMPS < >
+    COMPS < >,
+    MOD < [
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+        ; MOD < > 
+      ]
+    ],[
+      HEAD prep,
+      VAL [
+        SPR < >,
+        COMPS < >
+        ; MOD < > 
+      ]
+    ],[
+      HEAD adv,
+      VAL [
+        SPR < >,
+        COMPS < >
+        ; MOD < > 
+      ]
+    ] >
+  ]
+].
+
+;;;;;;;;;;;;; PREPS ;;;;;;;;;;;;;
+
+a := word &
+[ ORTH "a" , 
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    MOD < >
+  ]
+].
+
+de := word &
+[ ORTH "de", 
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    MOD < >
+  ]
+].
+
+para := word &
+[ ORTH "para", 
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    MOD < >
   ]
 ].
 
 hasta := word &
 [ ORTH "hasta", 
-  HEAD adv
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    MOD < >
+  ]
 ].
 
 desde := word &
 [ ORTH "desde", 
-  HEAD adv
+  HEAD prep,
+  VAL [
+    SPR < >,
+    COMPS < [
+      HEAD noun,
+      VAL [
+        SPR <>,
+        COMPS <>
+      ]
+    ] >,
+    MOD < >
+  ]
 ].
 
-manifestacion := word &
-[ ORTH "manifestación", 
-  HEAD noun & [
+;;;;;;;;;;;;; ADVERBIOS Y ADJETIVOS ;;;;;;;;;
+
+proximamente := word &
+[ ORTH "próximamente", 
+  HEAD adv,
+  VAL [
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+tarde-adv := word & [
+  ORTH "tarde",
+  HEAD adv,
+  VAL [
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
+
+programada := word &
+[ ORTH "programada", 
+  HEAD adj & [
     AGR [
       NUM sg,
       GEN fe
     ]
   ],
   VAL [
-    SPR < word & [
-      HEAD det & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ] 
-      ]
-    ] >
+    SPR < >,
+    COMPS < >,
+    MOD < >
   ]
 ].
 
-_punto := word &
-[ ORTH "." ].
+proxima := word &
+[ ORTH "próxima", 
+  HEAD adj & [
+    AGR [
+      NUM sg,
+      GEN fe
+    ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
+].
 
-programado := word & ; OBS - No deberia considerarse
+;;;;;;;;;;; AGRAMATICALES ;;;;;;;;;;;;;
+
+programado := word &
 [ ORTH "programado", 
-  HEAD verb
+  HEAD adj & [
+    AGR [
+      NUM sg,
+      GEN ma
+    ]
+  ],
+  VAL [
+    SPR < >,
+    COMPS < >,
+    MOD < >
+  ]
 ].
 
 
