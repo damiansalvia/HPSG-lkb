@@ -216,14 +216,7 @@ entrega-pp-pp := word &
         ] 
       ]  
     >,
-    MOD < [
-      HEAD adj & [
-        AGR [
-          NUM sg,
-          GEN fe
-        ]
-      ]
-    ] >
+    MOD < >
   ]
 ].
 
@@ -253,8 +246,7 @@ libros-computacion := word &
   VAL[
     SPR < >,
     COMPS < [
-      ;ORTH "de",
-      HEAD prep,
+      HEAD prep-de,
       VAL [
         SPR < >,
         COMPS < >
@@ -303,12 +295,12 @@ estudiantes-facultad := word &
         ]
       ],
       VAL [
-        SPR <>,
-        COMPS <>
+        SPR < >,
+        COMPS < >
       ]
     ] >,
     COMPS < [
-      HEAD prep,
+      HEAD prep-de,
       VAL [
         SPR < >,
         COMPS < >
@@ -660,7 +652,7 @@ postergaron := word &
       ]
     ] >,
     MOD < [
-      HEAD prep,
+      HEAD prep-para,
       VAL [
         SPR < >,
         COMPS < >
@@ -715,7 +707,7 @@ volvieron := word &
 
 a := word &
 [ ORTH "a" , 
-  HEAD prep,
+  HEAD prep-a,
   VAL [
     SPR < >,
     COMPS < [
@@ -731,7 +723,7 @@ a := word &
 
 de := word &
 [ ORTH "de", 
-  HEAD prep,
+  HEAD prep-de,
   VAL [
     SPR < >,
     COMPS < [
@@ -747,7 +739,7 @@ de := word &
 
 para := word &
 [ ORTH "para", 
-  HEAD prep,
+  HEAD prep-para,
   VAL [
     SPR < >,
     COMPS < [

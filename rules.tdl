@@ -35,7 +35,7 @@ head-complement-rule-2 := phrase &
          #comp2 >
 ].
 
-head-complement-rule-2-inverso := phrase &
+head-complement-rule-2-inv := phrase &
 [ HEAD verb,
   VAL [
     SPR #spr, 

@@ -22,6 +22,10 @@ prep := pos.
 adv := pos.
 conj := pos.
 
+prep-de := prep.
+prep-a := prep.
+prep-para := prep.
+
 verb := agr-pos &
 [ AGR agr-cat-p ].
 agr-pos-pg := agr-pos &
